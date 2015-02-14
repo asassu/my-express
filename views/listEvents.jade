@@ -1,0 +1,7 @@
+extends layout.jade
+
+block content
+    h4 Most Recent 30 Class Events
+    each item in myevents
+        div.row
+            a(href='/view/event/' + item.id)= item.type + " on " + item.repo.name

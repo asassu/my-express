@@ -1,0 +1,12 @@
+extends layout
+
+block content
+    div.row
+        h3= myevent.type + " - " + myevent.repo.name
+    div.row
+        h5= 'By: ' + myevent.actor.login
+
+    div.row
+        h5= "For : " + myevent.org.login
+
+end block
